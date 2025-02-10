@@ -1,11 +1,51 @@
-body{
-    background-color: red;
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
+h1 {
     font-family: "Nerko One", serif;
+    font-size: 2.5em;
+    padding: 1rem;
+    text-align: center;
 }
 
-h2{
+p,
+a{
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
 }
+
+
+img {
+    max-width: 100%;
+}
+
+
+/************************************************
+    UTILITIES
+ ************************************************/
+
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+
+
+
+
+ /************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+ @media screen and (min-width: 768px){
+    h1{
+        text-align: left;
+        font-size: 3rem;
+    }
+ }
