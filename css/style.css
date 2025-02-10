@@ -3,7 +3,7 @@
  *************************************************/
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ h3,
 h4,
 li,
 p,
-a{
+a {
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
     font-size: 1rem;
 }
@@ -37,89 +37,93 @@ img {
     UTILITIES
  ************************************************/
 
- .container{
+.container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     max-width: 100%;
- }
+}
 
- .display-n{
+.display-n {
     display: none;
- }
+}
 
- .t-white{
+.t-white {
     color: white;
- }
+}
 
- .p-default{
+.p-default {
     padding-left: 1rem;
     padding-right: 1rem;
- }
+}
 
- .m-default{
+.m-default {
     margin: 0 auto;
- }
- 
- .m-bottom-default{
+}
+
+.m-bottom-default {
     margin-bottom: 1rem;
- }
+}
 
 
 /************************************************
     SITE SECTIONS
  ************************************************/
 
-  /* MAIN */
-  main{
-    background-color: #F6F5F3 ;
-  }
+/* MAIN */
+main {
+    background-color: #F6F5F3;
+}
 
 
-  /* MAIN: SOCIAL-SECTION */
-  
+/* MAIN: SOCIAL-SECTION */
 
-  #social h4 {
+
+#social h4 {
     padding-top: 1rem;
-  }
+}
 
-  #type{
+#type {
     color: #8c8e95;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 5px;
-  }
+}
 
-  #social h3{
-    color:#4E3969;
+#social h3 {
+    color: #4E3969;
     font-size: 2rem;
     margin-bottom: 0.8rem;
-  }
+}
 
-  .video > div{
+.video>div {
     background-color: white;
-  }
+}
 
-  .video h4{
+.video h4 {
     margin-top: 1rem;
     margin-bottom: 2rem;
-  }
+}
 
-  .socials{
+.socials {
     margin-top: 1rem;
     flex-direction: row;
     justify-content: space-between;
-  }
+}
 
 
-  .fa-facebook, .fa-twitter{
+.fa-facebook,
+.fa-twitter {
     color: #1A77F3;
-  }
-  .fa-youtube, .fa-pinterest, .fa-instagram{
-    color:#E62222;
-  }
+}
 
-  .socials a{
+.fa-youtube,
+.fa-pinterest,
+.fa-instagram {
+    color: #E62222;
+}
+
+.socials a {
     font-size: 1.3rem;
     background-color: white;
     border-radius: 99em;
@@ -127,50 +131,64 @@ img {
     text-align: center;
     text-decoration: none;
     box-shadow: 1px 1px 5px rgb(171, 167, 167);
-  }
+}
 
 
-  #banner > img{
+#banner>img {
     margin-top: 2rem;
     margin-bottom: 2rem;
 
     width: 100%;
 }
 
- /* FOOTER */
+ /* MAIN: PRESENTATION SECTION */
 
- footer{
-    background-color: #7C69A4;
- }
+ #presentation h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
 
- footer .container{
-    text-align: center;
-    padding: 2rem;
- }
-
- footer .container a {
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
  }
 
- /************************************************
+
+/* FOOTER */
+
+footer {
+    background-color: #7C69A4;
+}
+
+footer .container {
+    text-align: center;
+    padding: 2rem;
+}
+
+footer .container a {
+    margin-bottom: 1rem;
+}
+
+/************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
 
- @media screen and (min-width: 768px){
-    h1{
+@media screen and (min-width: 768px) {
+    h1 {
         text-align: left;
         font-size: 3rem;
     }
 
-    #social h3 .display-n, #banner img{
+    #social h3 .display-n,
+    #banner img {
         display: inline-block;
     }
 
 
-    .socials a{
+    .socials a {
         width: 15%;
         border-radius: 99em;
-      }
+    }
 
     .container .short-repice {
         flex-direction: row;
@@ -178,37 +196,38 @@ img {
         gap: 1rem;
     }
 
-    .container .short-repice p{
+    .container .short-repice p {
         width: calc(33% - 1rem);
     }
 
- }
+}
 
 
- @media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
 
 
-    #social, #banner{
+    #social,
+    #banner {
         max-width: 1350px;
     }
 
     .container {
-        align-items: center; 
+        align-items: center;
     }
 
 
-    .video{
+    .video {
         flex-direction: row;
         align-items: stretch;
     }
 
-    .video img{
-       width: 80%;
+    .video img {
+        width: 80%;
     }
 
-    .video > div{
+    .video>div {
         width: 20%;
-     }
+    }
 
     .container .short-repice {
         flex-direction: column;
@@ -216,24 +235,24 @@ img {
         gap: 1rem;
     }
 
-    .container .short-repice p{
+    .container .short-repice p {
         width: 100%;
     }
 
-    .display-n{
-        display:inline;
+    .display-n {
+        display: inline;
     }
 
-    .social-link{
+    .social-link {
         color: black;
         font-weight: 700;
         font-size: 1rem;
         text-transform: uppercase;
     }
 
-    footer .container{
+    footer .container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-  }
+}
