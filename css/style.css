@@ -19,9 +19,12 @@ h1 {
 
 h2,
 h3,
+h4,
+li,
 p,
 a{
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
 }
 
 
@@ -37,13 +40,28 @@ img {
  .container{
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
+ }
+
+ .display-n{
+    display: none;
  }
 
  .t-white{
     color: white;
  }
 
- .m-bottom-10{
+ .p-default{
+    padding-left: 1rem;
+    padding-right: 1rem;
+ }
+
+ .m-default{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ }
+ 
+ .m-bottom-default{
     margin-bottom: 1rem;
  }
 
@@ -52,6 +70,38 @@ img {
     SITE SECTIONS
  ************************************************/
 
+  /* MAIN */
+  main{
+    background-color: #F6F5F3 ;
+  }
+
+
+  /* MAIN: SOCIAL-SECTION */
+
+  #social h4 {
+    padding-top: 1rem;
+  }
+
+  #type{
+    color: #8c8e95;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+
+  #social h3{
+    color:#4E3969;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .video > div{
+    background-color: white;
+  }
+
+
+ /* FOOTER */
+
  footer{
     background-color: #7C69A4;
  }
@@ -59,11 +109,9 @@ img {
  footer .container{
     text-align: center;
     padding: 2rem;
-    flex-direction: column;
  }
 
  footer .container a {
-    padding: 1rem;
     margin-bottom: 1rem;
  }
 
@@ -84,5 +132,6 @@ img {
     footer .container{
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
   }
