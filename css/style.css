@@ -143,6 +143,8 @@ main {
 
  /* MAIN: PRESENTATION SECTION */
 
+
+
  #presentation h3{
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -153,6 +155,18 @@ main {
     margin-bottom: 1rem;
  }
 
+ #presentation img{
+    max-width: 375px;
+    padding: 1rem;
+    display: block;
+ }
+
+ #presentation p{
+    font-size: 1rem;
+    letter-spacing: 3px;
+
+    padding-bottom: 1.5rem;
+ }
 
 /* FOOTER */
 
@@ -200,6 +214,10 @@ footer .container a {
         width: calc(33% - 1rem);
     }
 
+    #presentation img{
+        float: left;
+    }
+
 }
 
 
@@ -207,7 +225,8 @@ footer .container a {
 
 
     #social,
-    #banner {
+    #banner,
+    #presentation {
         max-width: 1350px;
     }
 
