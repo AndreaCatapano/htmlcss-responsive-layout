@@ -198,6 +198,18 @@ footer .container a {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+ @media screen and (min-width: 576px) {
+
+    .socials a {
+        width: 15%;
+        border-radius: 99em;
+    }
+
+    
+    #presentation img{
+        float: left;
+    }
+ }
 
 @media screen and (min-width: 768px) {
     h1 {
@@ -210,12 +222,6 @@ footer .container a {
         display: inline-block;
     }
 
-
-    .socials a {
-        width: 15%;
-        border-radius: 99em;
-    }
-
     .container .short-repice {
         flex-direction: row;
         flex-wrap: wrap;
@@ -225,11 +231,6 @@ footer .container a {
     .container .short-repice p {
         width: calc(33% - 1rem);
     }
-
-    #presentation img{
-        float: left;
-    }
-
 }
 
 
