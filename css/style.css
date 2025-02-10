@@ -69,7 +69,13 @@ img {
 /************************************************
     SITE SECTIONS
  ************************************************/
+/* HEADER */
 
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
 /* MAIN */
 main {
     background-color: #F6F5F3;
@@ -144,7 +150,6 @@ main {
  /* MAIN: PRESENTATION SECTION */
 
 
-
  #presentation h3{
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -155,16 +160,23 @@ main {
     margin-bottom: 1rem;
  }
 
+ #presentation hr{
+    width: 20%;
+    border: 1px solid #FF9614;
+    padding: 0;
+ }
+
  #presentation img{
     max-width: 375px;
-    padding: 1rem;
     display: block;
+    padding-right: 1rem;
+    margin: 1rem auto 0;
  }
 
  #presentation p{
     font-size: 1rem;
     letter-spacing: 3px;
-
+    margin-top: 1rem;
     padding-bottom: 1.5rem;
  }
 
