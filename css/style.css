@@ -17,6 +17,8 @@ h1 {
     color: #FF9614;
 }
 
+h2,
+h3,
 p,
 a{
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
@@ -74,4 +76,13 @@ img {
         text-align: left;
         font-size: 3rem;
     }
+
  }
+
+
+ @media screen and (min-width: 1200px){
+    footer .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
