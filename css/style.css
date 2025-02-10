@@ -112,7 +112,7 @@ main {
 }
 
 .socials {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -205,7 +205,7 @@ footer .container a {
         border-radius: 99em;
     }
 
-    
+
     #presentation img{
         float: left;
     }
