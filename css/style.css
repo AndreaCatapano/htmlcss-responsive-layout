@@ -41,6 +41,7 @@ img {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
  }
 
  .display-n{
@@ -57,8 +58,7 @@ img {
  }
 
  .m-default{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 0 auto;
  }
  
  .m-bottom-default{
@@ -77,6 +77,7 @@ img {
 
 
   /* MAIN: SOCIAL-SECTION */
+  
 
   #social h4 {
     padding-top: 1rem;
@@ -97,6 +98,11 @@ img {
 
   .video > div{
     background-color: white;
+  }
+
+  .video h4{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
 
@@ -125,10 +131,58 @@ img {
         font-size: 3rem;
     }
 
+    .display-n{
+        display: inline-block;
+    }
+
+    .container .short-repice {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .container .short-repice p{
+        width: calc(33% - 1rem);
+    }
+
  }
 
 
- @media screen and (min-width: 1200px){
+ @media screen and (min-width: 992px){
+
+
+    #social{
+        max-width: 1350px;
+    }
+
+    .container {
+        align-items: center; 
+    }
+
+
+    .video{
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .video img{
+       width: 80%;
+    }
+
+    .video > div{
+        width: 20%;
+     }
+
+    .container .short-repice {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .container .short-repice p{
+        width: 100%;
+    }
+
     footer .container{
         flex-direction: row;
         justify-content: space-between;
