@@ -105,6 +105,37 @@ img {
     margin-bottom: 2rem;
   }
 
+  .socials{
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .fa-facebook, .fa-twitter{
+    color: #1A77F3;
+  }
+  .fa-youtube, .fa-pinterest, .fa-instagram{
+    color:#E62222;
+  }
+
+  .socials a{
+    font-size: 1.3rem;
+    background-color: white;
+    border-radius: 99em;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 5px rgb(171, 167, 167);
+  }
+
+
+  #banner > img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    width: 100%;
+}
 
  /* FOOTER */
 
@@ -131,9 +162,15 @@ img {
         font-size: 3rem;
     }
 
-    .display-n{
+    #social h3 .display-n, #banner img{
         display: inline-block;
     }
+
+
+    .socials a{
+        width: 15%;
+        border-radius: 99em;
+      }
 
     .container .short-repice {
         flex-direction: row;
@@ -151,7 +188,7 @@ img {
  @media screen and (min-width: 992px){
 
 
-    #social{
+    #social, #banner{
         max-width: 1350px;
     }
 
@@ -181,6 +218,17 @@ img {
 
     .container .short-repice p{
         width: 100%;
+    }
+
+    .display-n{
+        display:inline;
+    }
+
+    .social-link{
+        color: black;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
     }
 
     footer .container{
