@@ -14,6 +14,7 @@ h1 {
     font-size: 2.5em;
     padding: 1rem;
     text-align: center;
+    color: #FF9614;
 }
 
 p,
@@ -31,13 +32,38 @@ img {
     UTILITIES
  ************************************************/
 
+ .container{
+    margin: 0 auto;
+    display: flex;
+ }
+
+ .t-white{
+    color: white;
+ }
+
+ .m-bottom-10{
+    margin-bottom: 1rem;
+ }
+
 
 /************************************************
     SITE SECTIONS
  ************************************************/
 
+ footer{
+    background-color: #7C69A4;
+ }
 
+ footer .container{
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+ }
 
+ footer .container a {
+    padding: 1rem;
+    margin-bottom: 1rem;
+ }
 
  /************************************************
     SOLUZIONE RESPONSIVE
